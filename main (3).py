@@ -1,19 +1,19 @@
-#finding the leap year 
-"""
-year % 4 == 0 &
-year % 100 ! = 0/
-year % 400 == 0
-"""
-def isLeapYear(year):
-  if(year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
 
-    return True
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting.")
 
-  else :
-   return False 
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling.")
 
-year = 2024
-if isLeapYear(year):
-  print('{} is a year .'.format(year))
-else:
-  print('{} is not a leap year. '.format (year))
+# Create objects of the Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# Call the play() method for each object
+batsman.play()
+bowler.play()
